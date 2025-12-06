@@ -1,0 +1,56 @@
+######
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "username": "test3",
+  "password": "112111"
+}
+
+######
+GET http://localhost:5000/usernames
+
+######
+GET http://localhost:5000/product/2
+ 
+######
+DELETE http://localhost:5000/delete-product/2
+
+###
+POST http://localhost:5000/add-product
+Content-Type: application/json
+
+{
+    "product_name"  : "Product C",
+    "description"   : "This is product C",
+    "qty"      : 13
+}
+
+###
+PUT http://localhost:5000/edit-product/1
+Content-Type: application/json
+
+{
+    "product_name"  : "Product D",
+    "description"   : "This is product D",
+    "qty"      : 13
+}
+
+
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "username": "test3",
+    "password": "112111"
+}
+
+
+###
+PUT http://localhost:5000/products
+
+###
+DELETE  http://localhost:5000/delete-notes/18
+
